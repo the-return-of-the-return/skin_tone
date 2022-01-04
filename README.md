@@ -1,5 +1,5 @@
 # skin_tone
-This is a project about changing the skin tone of model images
+This is a project about changing the skin tone of model in the images
 
 ## 1 pipline
 ### 1.1 Pretrained
@@ -10,16 +10,8 @@ The dataset contains six model images, Our task is to change the skin tone of th
 The predicted semantic segmentation results are obtained, and then the threshold is set to obtain the region containing skin that should be segmented.For the segmented region, modify the brightness of the pixels in the region
 
 ## 2 how to run test.ipynb
-The folders are organized as follows:
-├── Readme.md           // help  
-├── pretrained          //  
-│   ├── final_unet_pytorch.pth  // Pretrained model parameters  
-├── result  
-│   ├── 0.96            // the result from prediciton_threshold=0.96  
-│   ├── 0.96            // the result from prediciton_threshold=0.97  
-├── test_data           // it contain six model images
-├── layers.py           // this file contain the defination of some layers in UNet
-├── models.py           // defined UNET model
-├── test.ipynb          // The document contains an explanation of each step
+Just run test.ipynb while keeping the file location unchanged.
+The running steps have been divided in the test.ipynb file, and each step has corresponding comments
+
 ## 3 reference
 https://github.com/MRE-Lab-UMD/abd-skin-segmentation
